@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Compte</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>Créer un Compte</header>
+        <form id="register-form">
+            <div class="field">
+                <div class="input-area">
+                    <input type="text" id="first-name" placeholder="Prénom" required>
+                    <i class="icon fas fa-user"></i>
+                </div>
+                <div class="error">
+                    <div class="error-txt">Message d'erreur ici</div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-area">
+                    <input type="text" id="last-name" placeholder="Nom" required>
+                    <i class="icon fas fa-user"></i>
+                </div>
+                <div class="error">
+                    <div class="error-txt">Message d'erreur ici</div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-area">
+                    <input type="text" id="id" placeholder="ID de trois chiffres" required>
+                    <i class="icon fas fa-id-card"></i>
+                </div>
+                <div class="error">
+                    <div class="error-txt">Message d'erreur ici</div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-area">
+                    <input type="date" id="birthdate" required>
+                    <i class="icon fas fa-calendar-alt"></i>
+                </div>
+                <div class="error">
+                    <div class="error-txt">Message d'erreur ici</div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-area">
+                    <input type="text" id="postal-code" placeholder="Code Postal" required>
+                    <i class="icon fas fa-map-marker-alt"></i>
+                </div>
+                <div class="error">
+                    <div class="error-txt">Message d'erreur ici</div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-area">
+                    <input type="text" id="doctor-name" placeholder="Nom du Médecin" required>
+                    <i class="icon fas fa-user-md"></i>
+                </div>
+                <div class="error">
+                    <div class="error-txt">Message d'erreur ici</div>
+                </div>
+            </div>
+            <input type="submit" value="Créer un Compte">
+        </form>
+        <div class="login-link">Déjà un compte? <a href="hospital.html">Se connecter</a></div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

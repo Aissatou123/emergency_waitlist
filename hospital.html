@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Triage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>Connexion</header>
+        <form id="login-form">
+            <div class="field">
+                <div class="input-area">
+                    <input type="text" id="username" placeholder="Nom d'utilisateur ou Email" required>
+                    <i class="icon fas fa-user"></i>
+                </div>
+                <div class="error">
+                    <div class="error-txt">Message d'erreur ici</div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-area">
+                    <input type="password" id="password" placeholder="Mot de passe" required>
+                    <i class="icon fas fa-lock"></i>
+                    <i class="error-icon fas fa-exclamation-circle"></i>
+                </div>
+                <div class="error">
+                    <div class="error-txt">Message d'erreur ici</div>
+                </div>
+            </div>
+            <input type="submit" value="Se connecter">
+            <div class="pass-txt" style="margin-top: 20px;">Vous n'avez pas de compte? <a href="register.html">Créer un compte</a></div>
+        </form>
+
+        <!-- Liste des patients -->
+        <div id="patient-list" style="display: none;">
+            <h2>Liste des patients</h2>
+            <ul id="patients">
+                <!-- Les patients seront ajoutés dynamiquement ici -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
